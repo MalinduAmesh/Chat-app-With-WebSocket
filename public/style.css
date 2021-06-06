@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+body{
+    font-family: 'RocknRoll One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgb(116, 216, 252),rgb(156, 153, 254));
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.login{
+    background-image: repeating-linear-gradient(135deg, hsla(55,0%,44%,0.09) 0px, hsla(55,0%,44%,0.09) 1px,transparent 1px, transparent 11px),repeating-linear-gradient(45deg, hsla(55,0%,44%,0.09) 0px, hsla(55,0%,44%,0.09) 1px,transparent 1px, transparent 11px),linear-gradient(90deg, hsl(22,0%,8%),hsl(22,0%,8%));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-input{
+    font-size: 40px;
+    font-weight: 700;
+    color: #f1c40f;
+    -webkit-box-flex-group: 1;
+    width: 360px;
+    height: 80px;
+    border: none;
+    margin: 0px 12px ;
+    border-radius: 10px;
+    outline: none;
+    background-image: repeating-linear-gradient(90deg, rgba(3,3,3, 0.06) 0px, rgba(3,3,3, 0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, rgba(3,3,3, 0.06) 0px, rgba(3,3,3, 0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, rgba(0,0,0, 0.09) 0px, rgba(0,0,0, 0.09) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, rgba(0,0,0, 0.09) 0px, rgba(0,0,0, 0.09) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    
+}
+.btn-cliked{
+    transition: border 2s ease-out;
+    color: azure;
+    width: 138px;
+    height: 60px;
+outline: none;
+border: none;
+border-radius: 35px;
+margin-top: 173px;
+margin-left: -281px;
+margin-right: 124px;
+font-size: 30px;
+font-weight: 700;
+font-family: 'RocknRoll One', sans-serif;
+background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+.btn-cliked:hover{
+   opacity: 0.9;
+   border: 2px solid white ;
+}
+.title{
+    font-size: 50px;
+    margin: 20px -427px 200px 0px;
+    color: azure;
+
+}
+.title1{
+    margin-top: 32px;
+    margin-bottom: 29px;
+    margin-left: 101px;
+    margin-right: 10px;
+}
+.main{
+    border: 8px solid #e7e7e7;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.name{
+    display: flex;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 8px 16px;
+    /* width: 10px; */
+    color: rgb(2, 2, 2);
+    background-color: #2a2c2c;
+}
+.name > span{
+color: #16a085;
+}
+.spk{
+    color: teal;
+/* margin-left: 10px; */
+align-items: flex-end;
+}
+.name >label{
+    margin-left: 10px;
+    margin-top: -6px;
+}
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 2px,rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 3px,transparent 3px, transparent 5px,rgba(0,0,0,0.03) 5px, rgba(0,0,0,0.03) 7px),repeating-radial-gradient(circle at center center, rgb(255,255,255) 0px, rgb(255,255,255) 9px,rgb(255,255,255) 9px, rgb(255,255,255) 21px,rgb(255,255,255) 21px, rgb(255,255,255) 31px,rgb(255,255,255) 31px, rgb(255,255,255) 40px); background-size: 20px 20px;
+    width: 360px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.message-left, .message-right{
+    
+    list-style: none;
+    padding: 8px 12px;
+    margin: 12px;
+    max-width: 200px;
+    font-size: 12px;
+    word-wrap: break-word;
+
+
+}
+.message-left{
+    border-radius: 20px 20px 20px 0;
+    align-self: flex-start;
+    background-color: rgb(235, 235, 235);
+    box-shadow: -2px 2px 4px #000000;
+}
+
+.message-right{
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background-color: #3d3d3d;
+    box-shadow: -2px 2px 4px #46fff6;
+    color: #ebebeb;
+
+}
+
+.message-left >p >span{
+    display: block;   
+    font-size: 8px;
+    margin-top: -38px;
+}
+.message-left >p{
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 19px;
+}
+
+.feedback{
+    font-size: 10px;
+    padding: 0px 16px 0px 16px;
+    color: #985ae9;
+    text-align: center;
+    margin-top: 29px;
+    margin-right: -130px;
+    margin-left: -106px;
+
+
+}
+.message-form{
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+
+}
+.message-input{
+    flex-grow: 1;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0 13px;
+    background-color: #f4f7f8;
+    /* background-image: radial-gradient(circle at 13% 47%, rgba(140, 140, 140,0.03) 0%, rgba(140, 140, 140,0.03) 25%,transparent 25%, transparent 100%),radial-gradient(circle at 28% 63%, rgba(143, 143, 143,0.03) 0%, rgba(143, 143, 143,0.03) 16%,transparent 16%, transparent 100%),radial-gradient(circle at 81% 56%, rgba(65, 65, 65,0.03) 0%, rgba(65, 65, 65,0.03) 12%,transparent 12%, transparent 100%),radial-gradient(circle at 26% 48%, rgba(60, 60, 60,0.03) 0%, rgba(60, 60, 60,0.03) 6%,transparent 6%, transparent 100%),radial-gradient(circle at 97% 17%, rgba(150, 150, 150,0.03) 0%, rgba(150, 150, 150,0.03) 56%,transparent 56%, transparent 100%),radial-gradient(circle at 50% 100%, rgba(25, 25, 25,0.03) 0%, rgba(25, 25, 25,0.03) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 55% 52%, rgba(69, 69, 69,0.03) 0%, rgba(69, 69, 69,0.03) 6%,transparent 6%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255)); */
+}
+.send-button{
+    height: 40px;
+    font-size: 14px;
+    padding: 0px 20px;
+    background-image: linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, rgb(26, 118, 64),rgb(32, 207, 121),rgb(78, 196, 128));
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'RocknRoll One', sans-serif;
+}
+.cly{
+    display: flex;
+    
+}
+.clients-total{
+    font-size: 10px;
+    margin-left: 267px;
+    margin-top: 35px;
+}

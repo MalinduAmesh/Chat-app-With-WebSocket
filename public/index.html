@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat App</title>
+</head>
+<body     onload="mylog()" >
+
+<section class="login" id="body1">
+    <h1 class="title">AUTUMN FOX🦊 </h1>
+    <!-- <input type="text" id="name-input1" class="name-input1" placeholder="Name" maxlength="20"> -->
+    <input autofocus type="text" id="name-input" class="name-input" placeholder="Enter Your Name" maxlength="20">
+    <button class="btn-cliked" id="btn-cliked">Click</button>
+
+
+   
+</section>
+
+<section style="    width: 360px;" class="body-page" id="body3">
+    <h1 class="title1">AUTUMN FOX🦊 </h1>
+
+    <div class="main">
+        <div class="name">
+            <span><i class="fas fa-users"></i></span>
+            <label style="color: aliceblue;" for="text">Group 1</label>
+            <p class="feedback" id="feedback">Welcome</p>
+            <div class="cly">   <h3 style="color: aliceblue;" class="clients-total" id="clients-total">Online :👻</h3></div>
+         
+            <!-- <span><i class="fas fa-ghost spk"></i></span> -->
+        </div>
+        <ul class="message-container" id="message-container">
+         
+
+            <li class="message-feedback">
+                
+            </li>
+        </ul>
+
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" placeholder="Type here..." class="message-input">
+            <div class="v-divider"></div>
+            <button class="send-button" type="submit"> Send <span><i class="fas fa-paper-plane"></i></span></button>
+            
+
+        </form>
+    </div>
+
+</section>
+
+
+ 
+  
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>    
+
+    let click = $('#btn-cliked').click(function () {
+        // if(`${name-input} === ''`)return
+        $('#body1').css('display','none')
+        $('#body3').css('display','block')
+    })
+
+  function mylog(){
+    $('#body3').css('display','none')
+    $('name-input').focusin
+  }
+
+    </script>
+</body>
+</html>
